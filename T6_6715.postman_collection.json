@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "b73cb8f1-f2f9-4b10-b357-9f0b2403e4ca",
+		"name": "T6_6715",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Prak 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prak 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "oYtnxgO5QtW58Ho4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "saldo",
+							"value": "100000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/topup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"topup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prak 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/recharge",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"recharge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas Praktikum 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "dbrave@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "nama_user",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_lahir",
+							"value": "02-04-2000",
+							"type": "text"
+						},
+						{
+							"key": "tipe_user",
+							"value": "R",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas Praktikum 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "HfLdlUK6bhxrAmDu",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "saldo",
+							"value": "50000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/topup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"topup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas Praktikum 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "HfLdlUK6bhxrAmDu",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/users/recharge",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"recharge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas Praktikum 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "fQIMtD6iQrwZMulM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_konten",
+							"value": "Selesaikan praktikum dalam 1 menit",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "link",
+							"value": "youtube.com",
+							"type": "text"
+						},
+						{
+							"key": "kategori",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/content",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas Praktikum 5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "fQIMtD6iQrwZMulM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/content?kategori=0&nama=sel",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"content"
+					],
+					"query": [
+						{
+							"key": "kategori",
+							"value": "0"
+						},
+						{
+							"key": "nama",
+							"value": "sel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas Praktikum 6",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "fQIMtD6iQrwZMulM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/content/P0001",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"content",
+						"P0001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
